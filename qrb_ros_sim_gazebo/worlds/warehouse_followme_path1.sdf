@@ -43,10 +43,7 @@
           </geometry>
           <surface>
             <friction>
-              <ode>
-                <mu>0.6</mu>
-                <mu2>0.5</mu2>
-              </ode>
+              <ode/>
             </friction>
             <bounce/>
             <contact/>
@@ -415,7 +412,19 @@
       </uri>
       <pose>2.0 -2.0 0 0 0 0</pose>
     </include>
-
+ <!-- 
+@online{GazeboFuel-Mingfei-actor_walk,
+        title={actor_walk},
+        organization={Open Robotics},
+        date={2019},
+        month={August},
+        day={5},
+        author={Mingfei},
+        url={https://fuel.gazebosim.org/1.0/Mingfei/models/actor_walk},
+         }
+  modified=False
+  license=Creative Commons Attribution 4.0 International
+} -->
     <actor name="actor_walking">
       <skin>
         <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
