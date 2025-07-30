@@ -1,7 +1,8 @@
 from moveit_configs_utils import MoveItConfigsBuilder
 from moveit_configs_utils.launches import generate_demo_launch
-
+import time
 
 def generate_launch_description():
+    time.sleep(6)
     moveit_config = MoveItConfigsBuilder("rml_63", package_name="qrb_ros_moveit").to_moveit_configs()
     return generate_demo_launch(moveit_config)

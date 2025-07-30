@@ -4,4 +4,9 @@ from moveit_configs_utils.launches import generate_rsp_launch
 
 def generate_launch_description():
     moveit_config = MoveItConfigsBuilder("rml_63", package_name="qrb_ros_moveit").to_moveit_configs()
-    return generate_rsp_launch(moveit_config)
+    ld = generate_rsp_launch(moveit_config)
+    # 追加 use_sim_time 参数
+    for action in ld.entities:
+        if hasattr(action, 'parameters'):
+            action.parameters.append({'use_sim_time': True})
+    return ld

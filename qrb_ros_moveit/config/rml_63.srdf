@@ -36,6 +36,18 @@
         <joint name="joint5" value="0"/>
         <joint name="joint6" value="0"/>
     </group_state>
+    <group_state name="open" group="hand_controller">
+        <joint name="joint01" value="0"/>
+        <joint name="joint11" value="0"/>
+        <joint name="joint02" value="0"/>
+        <joint name="joint22" value="0"/>
+    </group_state>
+    <group_state name="close" group="hand_controller">
+        <joint name="joint01" value="0.5"/>
+        <joint name="joint11" value="0"/>
+        <joint name="joint02" value="-0.5"/>
+        <joint name="joint22" value="0"/>
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="hand" parent_link="link8" group="hand_controller"/>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
