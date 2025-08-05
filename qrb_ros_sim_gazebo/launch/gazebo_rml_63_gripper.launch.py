@@ -75,7 +75,8 @@ def launch_setup(context):
             os.path.join(get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py')
         ]),
         launch_arguments={
-            'gz_args': [os.path.join(gz_pkg_share, 'worlds', f'{config["world_model"]}.sdf') + ' -v 1']
+            'gz_args': [os.path.join(gz_pkg_share, 'worlds', f'{config["world_model"]}.sdf') + ' -v 1'],
+            'pause': 'false'
         }.items()
     )
 
