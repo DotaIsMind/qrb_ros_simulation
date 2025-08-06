@@ -23,6 +23,7 @@ def generate_launch_description():
         DeclareLaunchArgument('launch_config_file', default_value=''),
         # DeclareLaunchArgument('world_model', default_value='warehouse'),
         DeclareLaunchArgument('world_model', default_value='pick_and_place_demo'),
+        # DeclareLaunchArgument('world_model', default_value='panda_joint_control_world'),
         DeclareLaunchArgument('robot_entity_name', default_value='rml_63'),
         DeclareLaunchArgument('namespace', default_value=''),
         DeclareLaunchArgument('enable_rgb_camera', default_value='false'),
@@ -35,6 +36,12 @@ def generate_launch_description():
         DeclareLaunchArgument('initial_roll', default_value='0.0'),
         DeclareLaunchArgument('initial_pitch', default_value='0.0'),
         DeclareLaunchArgument('initial_yaw', default_value='3.14159'),
+        # DeclareLaunchArgument('initial_x', default_value='0.2'),
+        # DeclareLaunchArgument('initial_y', default_value='0.0'),
+        # DeclareLaunchArgument('initial_z', default_value='1.025'),
+        # DeclareLaunchArgument('initial_roll', default_value='0.0'),
+        # DeclareLaunchArgument('initial_pitch', default_value='0.0'),
+        # DeclareLaunchArgument('initial_yaw', default_value='3.14159'),
     ]
 
     return LaunchDescription(launch_args + [
@@ -76,7 +83,6 @@ def launch_setup(context):
         ]),
         launch_arguments={
             'gz_args': [os.path.join(gz_pkg_share, 'worlds', f'{config["world_model"]}.sdf') + ' -v 1'],
-            'pause': 'false'
         }.items()
     )
 

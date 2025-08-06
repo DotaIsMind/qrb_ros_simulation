@@ -14,7 +14,7 @@ echo "Launching Gazebo simulation..."
 ros2 launch qrb_ros_sim_gazebo gazebo_rml_63_gripper.launch.py  &
 
 sleep 15
-ros2 launch qrb_ros_moveit demo.launch.py &
+ros2 launch qrb_ros_arm_moveit_config demo.launch.py &
 
 # Keep the script running until Ctrl+C
 wait

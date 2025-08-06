@@ -26,7 +26,7 @@ from moveit_configs_utils.launch_utils import (
 def generate_launch_description():
     # wait gazebo ready
     time.sleep(6)
-    moveit_config = MoveItConfigsBuilder("rml_63", package_name="qrb_ros_moveit").to_moveit_configs()
+    moveit_config = MoveItConfigsBuilder("rml_63", package_name="qrb_ros_arm_moveit_config").to_moveit_configs()
     # return generate_demo_launch(moveit_config)
     """
     Launches a self contained demo

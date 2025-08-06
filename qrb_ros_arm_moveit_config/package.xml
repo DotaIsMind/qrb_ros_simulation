@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>qrb_ros_moveit</name>
+  <name>qrb_ros_arm_moveit_config</name>
   <version>0.3.0</version>
   <description>
      An automatically generated package with all the configuration and launch files for using the rml_63 with the MoveIt Motion Planning Framework
@@ -17,6 +17,15 @@
   <author email="tengf@qti.qaulcomm.com">tengf</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- 添加缺失的依赖 -->
+  <exec_depend>object_recognition_msgs</exec_depend>
+  <exec_depend>shape_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>trajectory_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
 
   <exec_depend>moveit_ros_move_group</exec_depend>
   <exec_depend>moveit_kinematics</exec_depend>
@@ -44,7 +53,6 @@
   <exec_depend>tf2_ros</exec_depend>
   <exec_depend>warehouse_ros_mongo</exec_depend>
   <exec_depend>xacro</exec_depend>
-
 
   <export>
       <build_type>ament_cmake</build_type>
