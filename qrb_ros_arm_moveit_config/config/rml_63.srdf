@@ -43,9 +43,9 @@
         <joint name="joint22" value="0"/>
     </group_state>
     <group_state name="close" group="hand_controller">
-        <joint name="joint01" value="0.5"/>
+        <joint name="joint01" value="0.15"/>
         <joint name="joint11" value="0"/>
-        <joint name="joint02" value="-0.5"/>
+        <joint name="joint02" value="-0.2"/>
         <joint name="joint22" value="0"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->

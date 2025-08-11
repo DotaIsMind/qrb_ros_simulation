@@ -56,7 +56,7 @@ def generate_launch_description():
     #         description="By default, we are not in debug mode",
     #     )
     # )
-    ld.add_action(DeclareBooleanLaunchArg("use_rviz", default_value=True))
+    ld.add_action(DeclareBooleanLaunchArg("use_rviz", default_value=False))
     # If there are virtual joints, broadcast static tf by including virtual_joints launch
     virtual_joints_launch = (
         launch_package_path / "launch/static_virtual_joint_tfs.launch.py"
