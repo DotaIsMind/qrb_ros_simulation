@@ -408,9 +408,44 @@
 
     <include>
       <uri>
-      https://fuel.gazebosim.org/1.0/OpenRobotics/models/Table
+        https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Table
       </uri>
-      <pose>2.0 -2.0 0 0 0 0</pose>
+      <name>table1</name>
+      <pose>2 -2 0 0 0 1.5708</pose>
+    </include>
+
+    <include>
+      <uri>
+        https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Table
+      </uri>
+      <name>table2</name>
+      <pose>2.794 -2 0 0 0 1.5708</pose>
+    </include>
+
+    <include>
+      <uri>
+      https://fuel.gazebosim.org/1.0/OpenRobotics/models/Coke
+      </uri>
+      <name>coke1</name>
+      <static>false</static>
+      <pose>3 -2 1.025 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>
+      https://fuel.gazebosim.org/1.0/OpenRobotics/models/Coke
+      </uri>
+      <name>coke2</name>
+      <static>false</static>
+      <pose>3 -1.5 1.025 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>
+      https://fuel.gazebosim.org/1.0/QCforward/models/carboard box
+      </uri>
+      <static>false</static>
+      <pose>2.95 -2.5 1.17 0 0 0</pose>
     </include>
   </world>
 </sdf>
